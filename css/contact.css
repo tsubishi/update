@@ -1,0 +1,120 @@
+/*accueil page de contact*/
+.hero{
+    height:100vh;
+    background: url(../img/contact.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    display: flex; align-items: center; justify-content: center;
+}
+.hero h1{
+    font-size: 120px; color:whitesmoke;
+}
+@media (max-width: 830px) {
+    .hero h1{
+        font-size: 90px;
+    }
+}
+@media (max-width: 530px) {
+    .hero h1{
+        font-size: 60px;
+    }
+}
+@media (max-width: 360px) {
+    .hero h1{
+        font-size: 45px;
+        word-break: break-all;
+    }
+}
+
+/*partie verte*/
+.text{
+    background: #1B441F;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+}
+.contact-text{
+    display:flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-evenly;
+}
+.contact-text div{
+    text-align: center;
+}
+
+@media (max-width: 1220px) {
+    .contact-text{
+        width: 90%;
+    }
+}
+@media (max-width: 850px) {
+    .contact-text{
+        width: 100%;
+    }
+}
+@media (max-width: 700px) {
+    .contact-text{
+        width: 100%;
+        flex-direction: column;
+    }
+    .contact-text div{
+        padding-bottom: 10px;
+        max-width: 90%;
+        word-wrap: break-word;
+    }
+}
+
+/*formulaire de contact*/
+.contact{
+    position:relative;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+form{
+    float: right;
+    width: 45%;
+}
+input, textarea{width: 100%;}
+textarea{height: 65px;}
+
+.form{
+    max-width: 80%;
+    position: relative;
+}
+form header h1{
+    color: chocolate;
+    word-wrap: break-word;
+}
+.form img{
+    max-width: 50%;
+    min-width: 20%;
+}
+.form div{padding-bottom: 10px;}
+
+@media (max-width: 850px) {
+    .form{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    form{
+        width: 90%;
+    }
+    .form img{
+        max-width: 90%;
+        min-width: 20%;
+    }
+}
+
+
+
+/*google map*/
+iframe{
+    width: 100%;
+}
