@@ -1,0 +1,100 @@
+section{
+    width: 100%; position: relative;
+}
+
+.hero{
+    height:60vh;
+    background:url('../img/Recherche.jpg');
+    background-size: cover;
+    background-position-x: fixed;
+    display:flex; align-items: center; justify-content: center;
+}
+
+
+h1, h2{ color: chocolate;}
+.container{
+    display:flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+}
+.contenu{
+    width: 55%;
+    padding-right: 10%;
+}
+.texte img{
+    max-width: 100%;
+}
+.liste{
+    display: flex;
+    flex-direction: row;
+}
+.liste div{
+    padding-right: 5%;
+}
+.liste p{
+    text-align: justify;
+}
+
+/*-------les aside-------*/
+.aside{
+    display:block;
+    width:15%;
+}
+.aside .article{
+    display: flex;
+    flex-direction: column;
+}
+.link, .link-article{
+    display:flex;
+    flex-direction: column;
+    padding-top:10px;
+}
+.link-article a{
+    text-decoration: none;
+    color:black;
+}
+.link a{
+    text-decoration: none;
+    background:black;
+    color:white;
+    padding:30px;
+    width: 100%;
+    margin-top:3%;
+}
+span{
+    color:green;
+}
+.auteur{
+    display: flex;
+    justify-content: end;
+}
+time{
+    color: blue;
+}
+@media (max-width: 950px) {
+    .contenu{
+        width: 70%;
+    }
+    .aside{
+        width: 20%;
+    }
+}
+@media (max-width: 850px) {
+
+    .container{
+        flex-direction: column; width: 90%;
+        left: 50%; position: relative;
+        transform: translateX(-50%);
+    }
+    .contenu{
+        width: 100%;
+        padding-right: inherit;
+    }
+    .aside{ width: 90%;}
+}
+@media (max-width: 450px) {
+    .liste{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,163 @@
+
+/* BODY */
+
+.rose{
+    display:flex;
+    width:100%;
+    overflow:hidden;
+    height:100vh;
+    background-color:#18441F; 
+    align-items:center;/*  Milieu ordonnée */
+    justify-content:center; /*Milieu abscysse*/
+    flex-direction: column;
+}
+#image1{
+    width:500px;
+}
+
+#titreprincipale{
+   
+   font-size:100px;
+   color:white;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns:47% 47%;
+    grid-template-rows:500px 500px;
+}
+
+.exemple1{
+    display:flex;
+    background-color:#3F2523;
+    align-items:center;
+    justify-content:center;
+}
+
+.soustitre{
+    position:relative;
+    top:30px;
+    left:50px;
+    color:#3F2523;
+}
+.traitmarron{
+    position:relative;
+    top:50px;
+    left:50px;
+    width:140px;
+    height:2px;
+    background-color:#3F2523;
+}
+
+.traitmarron1{
+  position:relative;
+  top:20px;
+  left:50px;
+  width:140px;
+  height:2px;
+  background-color:#3F2523;
+}
+
+.traitvert{
+    position:relative;
+    top:50px;
+    left:50px;
+    width:140px;
+    height:2px;
+    background-color:#5F8450;
+}
+
+
+.soustitre1{
+    position:relative;
+    top:30px;
+    left:50px;
+    color:#5F8450;
+}
+.paragraphe{
+    width:80%;
+    position:relative;
+    margin-top:50px;
+    left:50px;
+}
+#defile{
+   width:300px;
+}
+
+.exemple2{
+    background-color:#5F8450;
+   display:flex;
+   align-items:center;
+   justify-content: center;
+    width:110.9%;
+}
+#recherche{
+    
+    width:40%;
+}
+.exemple3{
+    background-color:#3F2523;
+    height:500px; 
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  
+}
+
+#image3{
+   width:40%;
+}
+
+
+/* RESPONSIVE BODY */
+@media (max-width: 1101px) {
+
+    .soustitre1{
+        width:300px;
+    }
+  .rose{
+      height:700px;
+  }
+    #titreprincipale{
+        top:15%;
+        left:5%;
+        font-size:80px;
+      
+     }
+
+#defile{
+    width:75%;
+}
+
+#recherche{
+    width:40%;
+}
+
+
+}
+
+@media (max-width: 690px) {
+    #titreprincipale{
+        font-size:50px;
+    }
+    .wrapper{
+    grid-template-columns:100%;
+    grid-template-rows:500px;
+    overflow:hidden;
+}
+
+.wrapper div:nth-child(4){
+    grid-row: 3/ 6;
+}
+
+.exemple3{
+    height:400px;
+}
+}
+
+@media (max-width: 320px) {
+    body{
+        width:320px;
+    }
+
+    
+}
